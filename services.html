@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de servicios · PAU-ZABI 💙💜-2025</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .services-section { padding: 0 0 80px; }
+    .upcoming-section { padding: 64px 0 80px; background: #F5F2EC; }
+    #services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    #upcoming-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    @media (max-width: 720px) {
+      #services-grid, #upcoming-grid { grid-template-columns: 1fr; }
+    }
+    .service-card {
+      display: flex;
+      flex-direction: column;
+    }
+    .resumen-pie {
+      padding: 64px 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+    }
+    .resumen-pie p {
+      font-family: var(--font-serif);
+      font-size: 1rem;
+      color: var(--text-secondary);
+      line-height: 2;
+    }
+    .resumen-pie span { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+  <!-- BURGER -->
+  <button class="burger-btn" id="burger-btn" aria-label="Abrir menú">☰</button>
+  <div class="menu-overlay" id="menu-overlay"></div>
+  <aside class="menu-drawer" id="menu-drawer" role="navigation">
+    <button class="menu-close" id="menu-close" aria-label="Cerrar menú">✕</button>
+    <div class="menu-drawer__header">
+      <span class="label">PAU-ZABI 💙💜-2025</span>
+      <p>Panel de cliente premium</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="carta.html">La carta</a></li>
+        <li><a href="services.html">Todos los servicios</a></li>
+        <li><a href="invoices.html">Facturas</a></li>
+        <li><a href="clausulas.html">Cláusulas completas</a></li>
+        <hr class="menu-separator" />        <li class="admin-only" style="display:none;">
+          <a href="invoices.html?admin=1" class="admin-link">↳ Vista Admin</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- DRAWER -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+  <aside class="service-drawer" id="service-drawer" role="complementary" aria-label="Detalle del servicio">
+    <div class="drawer-nav">
+      <div class="drawer-nav-arrows">
+        <button class="drawer-arrow" id="drawer-prev" aria-label="Servicio anterior">← Anterior</button>
+        <button class="drawer-arrow" id="drawer-next" aria-label="Servicio siguiente">Siguiente →</button>
+      </div>
+      <button class="drawer-close" id="drawer-close" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="drawer-content" id="drawer-content"></div>
+  </aside>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <span class="label">Catálogo oficial</span>
+      <h1>Registro de servicios prestados</h1>
+      <p style="color:var(--text-secondary);font-size:0.85rem;margin-top:8px;">
+        Ref. PAU-ZABI 💙💜 · Vigente desde septiembre 2025 · Actualización continua
+      </p>
+      <p class="intro">
+        Todo lo que aparece aquí ha ocurrido. Los costes están calculados con precisión aproximada.
+        Las cantidades son conservadoras. El valor real no es cuantificable, pero eso no quita que esté bien documentado.
+      </p>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section class="services-section">
+    <div class="container">
+      <!-- Filters -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="presencial">Presencial</button>
+        <button class="filter-btn" data-filter="distancia">Distancia</button>
+        <button class="filter-btn" data-filter="fisico">Físico</button>
+        <button class="filter-btn" data-filter="emocional">Emocional</button>
+      </div>
+
+      <!-- Grid -->
+      <div id="services-grid">
+        <div style="grid-column:1/-1;text-align:center;padding:40px;color:#bbb;">
+          Cargando servicios...
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UPCOMING -->
+  <section class="upcoming-section">
+    <div class="container">
+      <div class="divider">— ✦ —</div>
+      <div class="section-header">
+        <h2>En cartera — activación pendiente</h2>
+        <p>Servicios diseñados, descritos y con fecha aproximada de estreno.<br>Pendientes de activación presencial.</p>
+      </div>
+      <div id="upcoming-grid"></div>
+    </div>
+  </section>
+
+  <!-- RESUMEN PIE -->
+  <section class="resumen-pie">
+    <div class="container">
+      <div class="divider">— ✦ —</div>
+      <span class="label" style="display:block;margin-bottom:16px;">Resumen acumulado a fecha de emisión</span>
+      <p>
+        <span>1.130</span> besos · <span>1.070</span> abrazos · <span>52h</span> cardio ·
+        <span>25</span> comidas · <span>30</span> noches · <span>60</span> "te pienso" · <span>50</span> planes
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container container--narrow">
+      <p class="footer__legal">PAU-ZABI 💙💜-FINAL-001 · Catálogo actualizado</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/services.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La carta · PAU-ZABI 💙💜-2025</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    body { background: var(--bg); }
+    .carta-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .carta-main {
+      flex: 1;
+    }
+    /* Subtle background texture */
+    .carta-wrap::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 70%, rgba(184,134,11,0.03) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .carta-wrap {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body class="carta-page">
+
+  <!-- BURGER -->
+  <button class="burger-btn" id="burger-btn" aria-label="Abrir menú">☰</button>
+  <div class="menu-overlay" id="menu-overlay"></div>
+  <aside class="menu-drawer" id="menu-drawer" role="navigation">
+    <button class="menu-close" id="menu-close" aria-label="Cerrar menú">✕</button>
+    <div class="menu-drawer__header">
+      <span class="label">PAU-ZABI 💙💜-2025</span>
+      <p>Panel de cliente premium</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="carta.html">La carta</a></li>
+        <li><a href="services.html">Todos los servicios</a></li>
+        <li><a href="invoices.html">Facturas</a></li>
+        <li><a href="clausulas.html">Cláusulas completas</a></li>
+        <hr class="menu-separator" />        <li class="admin-only" style="display:none;">
+          <a href="invoices.html?admin=1" class="admin-link">↳ Vista Admin</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main class="carta-main">
+    <div class="carta-wrap">
+      <span class="label">Carta de acompañamiento · Documento confidencial</span>
+
+      <h1>Esto no estaba en el contrato inicial.</h1>
+
+      <div class="carta-body">
+        <p>
+          Hay cosas que no se buscan. Solo pasan. Despacio,<br>
+          sin aviso, de la forma más natural posible.
+        </p>
+
+        <p>
+          Empezamos hablando de todo — de la vida, de los miedos,<br>
+          de lo que queríamos y de lo que no, de lo que se le cuenta<br>
+          a alguien cuando todavía no sabes bien qué es esa persona para ti.
+        </p>
+
+        <p>
+          Y en algún punto, sin que nadie lo decidiera,<br>
+          dejó de ser cualquier persona.
+        </p>
+
+        <p>
+          Ahora que ya sé que sí — que esto tiene nombre y tiene intención —<br>
+          lo que me hace ilusión no es solo lo que ya vivimos.<br>
+          Es lo que viene. Los planes sin fecha. Las noches que todavía no pasaron.<br>
+          El cardio que todavía no hicimos juntas. El ascensor. La cocina.<br>
+          El cine. Las películas que vamos a ver abrazadas.
+        </p>
+
+        <p>
+          Esta web existe porque lo que hemos construido<br>
+          merece un registro oficial.<br>
+          Con sus métricas, sus servicios, su letra pequeña<br>
+          y su garantía de larga duración.
+        </p>
+
+        <p>
+          Y con todo lo que todavía no tiene nombre pero ya tiene ganas.
+        </p>
+      </div>
+
+      <div class="carta-firma">
+        <p class="firma-text">Paula · Barcelona, mayo 2026</p>
+        <p class="firma-note">Documento vivo. Se actualiza con cada vez que nos vemos.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" style="padding:40px 0 32px;">
+    <div class="container container--narrow">
+      <p class="footer__legal">PAU-ZABI 💙💜-FINAL-001 · Carta de acompañamiento</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

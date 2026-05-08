@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facturas · PAU-ZABI 💙💜-2025</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <style>
+    .invoices-section { padding: 0 0 80px; }
+    .historial-section { padding: 64px 0; background: #F5F2EC; }
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      margin-bottom: 24px;
+      color: var(--text);
+    }
+    .section-title span {
+      font-size: 0.75rem;
+      font-family: var(--font-sans);
+      color: var(--text-secondary);
+      font-weight: 400;
+      margin-left: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ADMIN BANNER (hidden by default) -->
+  <div id="admin-banner" style="display:none;" class="admin-banner">
+    Modo administrador activo · Vista completa de gestión
+  </div>
+
+  <!-- BURGER -->
+  <button class="burger-btn" id="burger-btn" aria-label="Abrir menú">☰</button>
+  <div class="menu-overlay" id="menu-overlay"></div>
+  <aside class="menu-drawer" id="menu-drawer" role="navigation">
+    <button class="menu-close" id="menu-close" aria-label="Cerrar menú">✕</button>
+    <div class="menu-drawer__header">
+      <span class="label">PAU-ZABI 💙💜-2025</span>
+      <p>Panel de cliente premium</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="carta.html">La carta</a></li>
+        <li><a href="services.html">Todos los servicios</a></li>
+        <li><a href="invoices.html">Facturas</a></li>
+        <li><a href="clausulas.html">Cláusulas completas</a></li>
+        <hr class="menu-separator" />        <li class="admin-only" style="display:none;">
+          <a href="invoices.html?admin=1" class="admin-link">↳ Vista Admin</a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <span class="label">Historial de facturación</span>
+      <h1>Facturación mensual</h1>
+      <p class="intro">
+        Historial completo de servicios activados por periodo.<br>
+        El pago se realiza exclusivamente en unidades afectivas.
+      </p>
+    </div>
+  </header>
+
+  <!-- INVOICE VIEW -->
+  <section class="invoices-section">
+    <div class="container">
+      <div class="section-title">
+        Factura del mes
+        <span>Selecciona el periodo que quieres ver</span>
+      </div>
+
+      <!-- Month tabs -->
+      <div id="month-tabs" class="month-tabs">
+        <div style="color:#bbb;font-size:0.85rem;">Cargando facturas...</div>
+      </div>
+
+      <!-- Invoice document -->
+      <div id="invoice-view"></div>
+    </div>
+  </section>
+
+  <!-- HISTORIAL -->
+  <section class="historial-section">
+    <div class="container">
+      <div class="divider">— ✦ —</div>
+      <div class="section-header">
+        <h2>Historial completo</h2>
+        <p>Todos los periodos. Expandible.</p>
+      </div>
+      <div id="historial-list"></div>
+      <div id="global-totals" style="margin-top:32px;"></div>
+    </div>
+  </section>
+
+  <!-- ADMIN SECTION (rendered by JS if ?admin=1) -->
+  <section id="admin-section" style="display:none;padding:0 0 80px;">
+    <div class="container"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="container container--narrow">
+      <p class="footer__legal">PAU-ZABI 💙💜-FINAL-001 · Facturación en unidades afectivas · Sin tipo de cambio aplicable</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/invoices.js"></script>
+</body>
+</html>

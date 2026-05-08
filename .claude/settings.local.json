@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"/Users/paularodas/Zabi /Web/data\" \"/Users/paularodas/Zabi /Web/css\" \"/Users/paularodas/Zabi /Web/js\" && echo \"Directorios creados\")",
+      "Bash(node --check \"/Users/paularodas/Zabi /Web/js/main.js\")",
+      "Bash(node --check \"/Users/paularodas/Zabi /Web/js/services.js\")",
+      "Bash(node --check \"/Users/paularodas/Zabi /Web/js/invoices.js\")",
+      "Bash(node -e ' *)"
+    ],
+    "additionalDirectories": [
+      "/Users/paularodas/Zabi /Web"
+    ]
+  }
+}

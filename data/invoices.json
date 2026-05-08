@@ -1,0 +1,309 @@
+{
+  "invoices": [
+    {
+      "id": "2025-09",
+      "month": "Septiembre 2025",
+      "status": "published",
+      "items": [
+        {
+          "serviceId": "mimos-distancia",
+          "serviceName": "Mimos a distancia deluxe",
+          "type": "activación",
+          "quantity": 1,
+          "cost": { "besos": 200, "abrazos": 120 }
+        },
+        {
+          "serviceId": "bromas-sonrisas",
+          "serviceName": "Bromas y sonrisas curadas",
+          "type": "uso",
+          "quantity": 12,
+          "cost": { "besos": 80, "sonrisas": 100 }
+        },
+        {
+          "serviceId": "recogida-estacion",
+          "serviceName": "Recogida en estación premium",
+          "type": "prestación",
+          "quantity": 2,
+          "cost": { "abrazos": 80, "besos": 40 }
+        }
+      ],
+      "total": { "besos": 320, "abrazos": 200, "sonrisas": 100 },
+      "note": "Primer mes oficial. Muchas cosas pasaron. Ninguna era de esperar y todas eran inevitables."
+    },
+    {
+      "id": "2025-10",
+      "month": "Octubre 2025",
+      "status": "published",
+      "items": [
+        {
+          "serviceId": "mimos-distancia",
+          "serviceName": "Mimos a distancia deluxe",
+          "type": "suscripción",
+          "quantity": 1,
+          "cost": { "besos": 200, "abrazos": 120 }
+        },
+        {
+          "serviceId": "almohada-nocturna",
+          "serviceName": "Almohada nocturna signature",
+          "type": "prestación",
+          "quantity": 6,
+          "cost": { "noches": 6, "abrazos": 40 }
+        },
+        {
+          "serviceId": "antistress-urbano",
+          "serviceName": "Anti-estrés urbano premium",
+          "type": "uso",
+          "quantity": 8,
+          "cost": { "besos": 120, "abrazos": 80 }
+        },
+        {
+          "serviceId": "gastronomico",
+          "serviceName": "Servicio gastronómico experiencial",
+          "type": "prestación",
+          "quantity": 5,
+          "cost": { "comidas": 5 }
+        }
+      ],
+      "total": { "besos": 320, "abrazos": 240, "noches": 6, "comidas": 5 },
+      "note": "Mes con mucho movimiento. Barcelona recibió bien. Madrid extrañó."
+    },
+    {
+      "id": "2025-11",
+      "month": "Noviembre 2025",
+      "status": "published",
+      "items": [
+        {
+          "serviceId": "mimos-distancia",
+          "serviceName": "Mimos a distancia deluxe",
+          "type": "suscripción",
+          "quantity": 1,
+          "cost": { "besos": 200, "abrazos": 120 }
+        },
+        {
+          "serviceId": "cardio-compartido",
+          "serviceName": "Cardio compartido intensivo",
+          "type": "prestación",
+          "quantity": 3,
+          "cost": { "horas": 9 }
+        },
+        {
+          "serviceId": "mimos-presenciales",
+          "serviceName": "Mimos presenciales high-end",
+          "type": "prestación",
+          "quantity": 1,
+          "cost": { "abrazos": 180, "besos": 120 }
+        },
+        {
+          "serviceId": "curaduria-musical",
+          "serviceName": "Curaduría musical & cine exclusiva",
+          "type": "uso",
+          "quantity": 4,
+          "cost": { "besos": 60, "planes": 8 }
+        }
+      ],
+      "total": { "besos": 380, "abrazos": 300, "horas": 9, "planes": 8 },
+      "note": "El frío llegó. Nosotras también."
+    },
+    {
+      "id": "2025-12",
+      "month": "Diciembre 2025",
+      "status": "published",
+      "items": [
+        {
+          "serviceId": "mimos-distancia",
+          "serviceName": "Mimos a distancia deluxe",
+          "type": "suscripción",
+          "quantity": 1,
+          "cost": { "besos": 200, "abrazos": 120 }
+        },
+        {
+          "serviceId": "almohada-nocturna",
+          "serviceName": "Almohada nocturna signature",
+          "type": "prestación",
+          "quantity": 8,
+          "cost": { "noches": 8, "abrazos": 60 }
+        },
+        {
+          "serviceId": "generacion-recuerdos",
+          "serviceName": "Generación estratégica de recuerdos",
+          "type": "prestación",
+          "quantity": 1,
+          "cost": { "besos": 140, "abrazos": 100 }
+        },
+        {
+          "serviceId": "gastronomico",
+          "serviceName": "Servicio gastronómico experiencial",
+          "type": "prestación",
+          "quantity": 6,
+          "cost": { "comidas": 6 }
+        }
+      ],
+      "total": { "besos": 340, "abrazos": 280, "noches": 8, "comidas": 6 },
+      "note": "Diciembre con más luz de la habitual. No fue solo el solsticio."
+    },
+    {
+      "id": "2026-01",
+      "month": "Enero 2026",
+      "status": "published",
+      "items": [
+        {
+          "serviceId": "mimos-distancia",
+          "serviceName": "Mimos a distancia deluxe",
+          "type": "suscripción",
+          "quantity": 1,
+          "cost": { "besos": 200, "abrazos": 120 }
+        },
+        {
+          "serviceId": "asesoria-eco-tech",
+          "serviceName": "Asesoría eco-tech premium",
+          "type": "uso",
+          "quantity": 3,
+          "cost": { "besos": 60, "abrazos": 40 }
+        },
+        {
+          "serviceId": "antistress-urbano",
+          "serviceName": "Anti-estrés urbano premium",
+          "type": "uso",
+          "quantity": 10,
+          "cost": { "besos": 140, "abrazos": 100 }
+        }
+      ],
+      "total": { "besos": 400, "abrazos": 260 },
+      "note": "Año nuevo, mismas ganas."
+    },
+    {
+      "id": "2026-02",
+      "month": "Febrero 2026",
+      "status": "published",
+      "items": [
+        {
+          "serviceId": "mimos-distancia",
+          "serviceName": "Mimos a distancia deluxe",
+          "type": "suscripción",
+          "quantity": 1,
+          "cost": { "besos": 200, "abrazos": 120 }
+        },
+        {
+          "serviceId": "almohada-nocturna",
+          "serviceName": "Almohada nocturna signature",
+          "type": "prestación",
+          "quantity": 5,
+          "cost": { "noches": 5, "abrazos": 40 }
+        },
+        {
+          "serviceId": "masajes-premium",
+          "serviceName": "Masajes terapéuticos premium",
+          "type": "prestación",
+          "quantity": 2,
+          "cost": { "besos": 100, "abrazos": 60 }
+        },
+        {
+          "serviceId": "bromas-sonrisas",
+          "serviceName": "Bromas y sonrisas curadas",
+          "type": "uso",
+          "quantity": 20,
+          "cost": { "besos": 80, "sonrisas": 120 }
+        }
+      ],
+      "total": { "besos": 380, "abrazos": 220, "noches": 5, "sonrisas": 120 },
+      "note": "Febrero tiene mala fama. Este fue la excepción."
+    },
+    {
+      "id": "2026-03",
+      "month": "Marzo 2026",
+      "status": "published",
+      "items": [
+        {
+          "serviceId": "mimos-distancia",
+          "serviceName": "Mimos a distancia deluxe",
+          "type": "suscripción",
+          "quantity": 1,
+          "cost": { "besos": 200, "abrazos": 120 }
+        },
+        {
+          "serviceId": "cardio-compartido",
+          "serviceName": "Cardio compartido intensivo",
+          "type": "prestación",
+          "quantity": 4,
+          "cost": { "horas": 12 }
+        },
+        {
+          "serviceId": "padel-remada",
+          "serviceName": "Pádel & remada experience",
+          "type": "prestación",
+          "quantity": 2,
+          "cost": { "planes": 6 }
+        },
+        {
+          "serviceId": "gastronomico",
+          "serviceName": "Servicio gastronómico experiencial",
+          "type": "prestación",
+          "quantity": 4,
+          "cost": { "comidas": 4 }
+        }
+      ],
+      "total": { "besos": 200, "abrazos": 120, "horas": 12, "planes": 6, "comidas": 4 },
+      "note": "La primavera llegó antes de lo previsto."
+    },
+    {
+      "id": "2026-04",
+      "month": "Abril 2026",
+      "status": "published",
+      "items": [
+        {
+          "serviceId": "mimos-distancia",
+          "serviceName": "Mimos a distancia deluxe",
+          "type": "suscripción",
+          "quantity": 1,
+          "cost": { "besos": 200, "abrazos": 120 }
+        },
+        {
+          "serviceId": "almohada-nocturna",
+          "serviceName": "Almohada nocturna signature",
+          "type": "prestación",
+          "quantity": 6,
+          "cost": { "noches": 6, "abrazos": 50 }
+        },
+        {
+          "serviceId": "moto-vip",
+          "serviceName": "Transporte en moto VIP",
+          "type": "prestación",
+          "quantity": 3,
+          "cost": { "abrazos": 60, "besos": 40 }
+        },
+        {
+          "serviceId": "generacion-recuerdos",
+          "serviceName": "Generación estratégica de recuerdos",
+          "type": "prestación",
+          "quantity": 1,
+          "cost": { "besos": 120, "abrazos": 80 }
+        }
+      ],
+      "total": { "besos": 360, "abrazos": 310, "noches": 6 },
+      "note": "Abril con lluvia y sin paraguas. No importó."
+    },
+    {
+      "id": "2026-05",
+      "month": "Mayo 2026",
+      "status": "published",
+      "items": [
+        {
+          "serviceId": "mimos-distancia",
+          "serviceName": "Mimos a distancia deluxe",
+          "type": "suscripción",
+          "quantity": 1,
+          "cost": { "besos": 200, "abrazos": 120 }
+        },
+        {
+          "serviceId": "relajacion-integral",
+          "serviceName": "Activación de relajación integral bajo demanda",
+          "type": "estreno",
+          "quantity": 1,
+          "cost": { "besos": 260, "abrazos": 200 }
+        }
+      ],
+      "total": { "besos": 460, "abrazos": 320 },
+      "note": "Mayo. El miércoles 14. Lo que viene después de esta factura."
+    }
+  ]
+}

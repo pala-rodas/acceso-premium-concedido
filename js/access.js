@@ -1,6 +1,5 @@
 /* ===== ACCESO PREMIUM ===== */
 (function () {
-
   // --- CONFIGURACIÓN DE CÓDIGO ---
   // Por defecto el código es la fecha actual en formato DDMM (ej: 16 de mayo → 1605)
   // Para usar un código fijo, descomenta esta constante y úsala en validateAccess():
@@ -8,8 +7,8 @@
 
   function getTodayCode() {
     const now = new Date();
-    const dd = String(now.getDate()).padStart(2, '0');
-    const mm = String(now.getMonth() + 1).padStart(2, '0');
+    const dd = String(now.getDate()).padStart(2, "0");
+    const mm = String(now.getMonth() + 1).padStart(2, "0");
     return dd + mm;
   }
 
@@ -19,21 +18,21 @@
   }
 
   function showMainContent() {
-    const overlay = document.getElementById('access-overlay');
+    const overlay = document.getElementById("access-overlay");
     if (overlay) {
-      overlay.style.opacity = '0';
-      overlay.style.transition = 'opacity 0.3s';
+      overlay.style.opacity = "0";
+      overlay.style.transition = "opacity 0.3s";
       setTimeout(() => overlay.remove(), 300);
     }
-    document.body.style.overflow = '';
+    document.body.style.overflow = "";
   }
 
   function showAccessForm() {
-    const overlay = document.createElement('div');
-    overlay.id = 'access-overlay';
+    const overlay = document.createElement("div");
+    overlay.id = "access-overlay";
     overlay.style.cssText =
-      'position:fixed;inset:0;background:var(--bg);z-index:9999;' +
-      'display:flex;align-items:center;justify-content:center;padding:24px;';
+      "position:fixed;inset:0;background:var(--bg);z-index:9999;" +
+      "display:flex;align-items:center;justify-content:center;padding:24px;";
 
     overlay.innerHTML = `
       <div style="text-align:center;max-width:360px;width:100%;">
@@ -58,32 +57,38 @@
     `;
 
     document.body.appendChild(overlay);
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
 
-    const input = overlay.querySelector('#access-input');
-    const btn   = overlay.querySelector('#access-btn');
-    const error = overlay.querySelector('#access-error');
+    const input = overlay.querySelector("#access-input");
+    const btn = overlay.querySelector("#access-btn");
+    const error = overlay.querySelector("#access-error");
 
-    input.addEventListener('focus', () => { input.style.borderColor = 'var(--gold)'; });
-    input.addEventListener('blur',  () => { input.style.borderColor = 'var(--border)'; });
+    input.addEventListener("focus", () => {
+      input.style.borderColor = "var(--gold)";
+    });
+    input.addEventListener("blur", () => {
+      input.style.borderColor = "var(--border)";
+    });
 
-    input.addEventListener('input', () => {
-      input.value = input.value.replace(/\D/g, '').slice(0, 4);
-      error.textContent = '';
+    input.addEventListener("input", () => {
+      input.value = input.value.replace(/\D/g, "").slice(0, 4);
+      error.textContent = "";
       if (input.value.length === 4) attempt();
     });
 
-    input.addEventListener('keydown', e => { if (e.key === 'Enter') attempt(); });
-    btn.addEventListener('click', attempt);
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") attempt();
+    });
+    btn.addEventListener("click", attempt);
 
     function attempt() {
       if (validateAccess(input.value)) {
-        localStorage.setItem('premiumAccessGranted', '1');
+        localStorage.setItem("premiumAccessGranted", "1");
         showMainContent();
       } else {
-        error.textContent = 'Código incorrecto. Pista: hoy es la clave.';
-        input.style.borderColor = 'var(--gold-dark)';
-        input.value = '';
+        error.textContent = "Código incorrecto. Pista: hoy es importante.";
+        input.style.borderColor = "var(--gold-dark)";
+        input.value = "";
         setTimeout(() => input.focus(), 0);
       }
     }
@@ -91,8 +96,7 @@
     input.focus();
   }
 
-  if (!localStorage.getItem('premiumAccessGranted')) {
+  if (!localStorage.getItem("premiumAccessGranted")) {
     showAccessForm();
   }
-
 })();

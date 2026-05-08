@@ -1,406 +1,648 @@
 {
+  "meta": {
+    "emisora": "Paula Rodas Ruiz",
+    "receptora": "Zabi",
+    "clasificacion": "Prestación no convencional de experiencias afectivas, cognitivas y físicas de alto valor",
+    "periodo": "noviembre 2025 — presente",
+    "edicion": "mayo 2026",
+    "nota": "Lo que aquí se detalla no es una lista de favores ni un inventario de momentos. Es el registro oficial — y ligeramente exagerado con toda la intención — de una serie de servicios prestados con dedicación, criterio y afecto genuino.",
+    "sistemaPago": {
+      "nota": "Las cantidades asignadas tienen carácter acumulativo y simbólicamente intensificado. Cualquier cuestionamiento sobre las cifras será respondido con más abrazos, no con argumentos.",
+      "unidades": [
+        {
+          "simbolo": "B",
+          "nombre": "Besos",
+          "naturaleza": "Unidad básica de afecto directo"
+        },
+        {
+          "simbolo": "A",
+          "nombre": "Abrazos",
+          "naturaleza": "Unidad de contención emocional y contacto físico"
+        },
+        {
+          "simbolo": "HC",
+          "nombre": "Horas compartidas",
+          "naturaleza": "Tiempo de interacción activa"
+        },
+        {
+          "simbolo": "P",
+          "nombre": "Planes",
+          "naturaleza": "Experiencias conjuntas"
+        },
+        {
+          "simbolo": "C",
+          "nombre": "Comidas",
+          "naturaleza": "Encuentros gastronómicos compartidos"
+        },
+        {
+          "simbolo": "N",
+          "nombre": "Noches",
+          "naturaleza": "Tiempo de descanso conjunto"
+        },
+        {
+          "simbolo": "MR",
+          "nombre": "Momentos de risa",
+          "naturaleza": "Impacto emocional positivo verificable"
+        },
+        {
+          "simbolo": "ME",
+          "nombre": "Mensajes emocionales",
+          "naturaleza": "Conexión remota de calidad"
+        },
+        {
+          "simbolo": "ST",
+          "nombre": "Stickers",
+          "naturaleza": "Impacto visual-emocional inmediato"
+        }
+      ]
+    },
+    "resumenGlobal": {
+      "besos": 1130,
+      "abrazos": 1070,
+      "horasCardio": 52,
+      "comidas": 25,
+      "planes": 50,
+      "noches": 30,
+      "mensajesEmocionales": 60,
+      "momentosRisa": 40,
+      "stickers": "∞"
+    }
+  },
   "services": [
     {
       "id": "asesoria-eco-tech",
       "name": "Asesoría eco-tech premium",
-      "category": "distancia",
-      "shortDesc": "Traducción de conceptos técnicos a lenguaje humano. Paciencia infinita incluida.",
-      "description": "Acompañamiento en decisiones de compra conscientes, sostenibles y tecnológicamente informadas. Incluye traducción de conceptos técnicos a lenguaje accesible.",
-      "components": [
-        "Análisis de productos y decisiones",
-        "Explicación técnica simplificada",
-        "Recomendaciones personalizadas",
-        "Resolución de dudas en tiempo real"
-      ],
-      "function": "Eliminar la angustia tecnológica. Tomar mejores decisiones con contexto.",
-      "cost": "120B + 80A",
-      "costDetail": { "besos": 120, "abrazos": 80 },
+      "category": ["distancia", "emocional"],
+      "status": "active",
       "featured": false,
-      "status": "active"
+      "shortDesc": "Traducción de conceptos técnicos a lenguaje humano. Paciencia infinita incluida.",
+      "description": "Servicio de acompañamiento en la toma de decisiones de compra conscientes, sostenibles y tecnológicamente informadas. Incluye la traducción de conceptos técnicos complejos a lenguaje accesible, facilitando la comprensión y autonomía de la receptora en temas tecnológicos.",
+      "components": [
+        "Análisis de productos y decisiones de compra",
+        "Explicación técnica simplificada sin condescendencia",
+        "Recomendaciones personalizadas según valores y necesidades",
+        "Resolución de dudas en tiempo real, incluso a horas inoportunas"
+      ],
+      "benefits": [
+        "Mayor autonomía tecnológica",
+        "Compras más alineadas con sus valores",
+        "Ahorro de tiempo y frustración",
+        "Sensación de tener a alguien que sabe lo que hace"
+      ],
+      "technicalNote": "El servicio se presta con paciencia genuina y sin hacer sentir a la clienta que pregunta cosas obvias. La proveedora posee criterio propio sobre sostenibilidad y tecnología, lo que eleva significativamente la calidad de las recomendaciones frente a buscadores genéricos.",
+      "cost": "120B + 80A",
+      "costDetail": { "besos": 120, "abrazos": 80 }
     },
     {
       "id": "mimos-distancia",
       "name": "Mimos a distancia deluxe",
-      "category": "distancia",
-      "shortDesc": "Presencia emocional constante. Incluye 'te pienso' enviados desde cualquier lugar.",
-      "description": "Sistema continuo de presencia emocional mediante mensajes, audios y pensamientos intencionales, diseñado para reducir la sensación de distancia y mantener la conexión activa.",
-      "components": [
-        "Mensajes espontáneos a horas estratégicas",
-        "Audios afectivos enviados a velocidades ilegales",
-        "Expresiones de cuidado y atención continua",
-        "'Te pienso' enviados desde el metro, la cama y cualquier otro lugar donde de repente aparezcas en mi cabeza"
-      ],
-      "function": "Reducir la distancia emocional. Generar sensación de compañía constante.",
-      "cost": "200B + 120A",
-      "costDetail": { "besos": 200, "abrazos": 120 },
+      "category": ["distancia", "emocional"],
+      "status": "active",
       "featured": true,
-      "status": "active"
+      "shortDesc": "Presencia emocional constante. Incluye 'te pienso' enviados desde cualquier lugar.",
+      "description": "Sistema continuo de presencia emocional mediante interacción remota: mensajes, audios, pensamientos intencionales. Diseñado para reducir la sensación de distancia y mantener la conexión activa incluso cuando hay cientos de kilómetros de por medio.",
+      "components": [
+        "Mensajes espontáneos en momentos inesperados",
+        "Audios afectivos (tono cálido, contenido variable)",
+        "Expresiones de cuidado y atención no solicitadas",
+        "Interacciones de refuerzo emocional en momentos clave"
+      ],
+      "benefits": [
+        "Reducción objetiva de la sensación de soledad",
+        "Presencia emocional constante sin invasión",
+        "Aumento del bienestar general entre visitas",
+        "Sonrisas involuntarias en momentos aleatorios del día"
+      ],
+      "technicalNote": "La efectividad del servicio depende de la calidad de la conexión emocional preexistente. En este caso, dicha conexión es elevada, lo que potencia el impacto de cada interacción. El servicio no requiere solicitud: se activa de forma autónoma.",
+      "cost": "200B + 120A",
+      "costDetail": { "besos": 200, "abrazos": 120 }
     },
     {
       "id": "bromas-sonrisas",
       "name": "Bromas y sonrisas curadas",
-      "category": "distancia",
-      "shortDesc": "Intervenciones estratégicas de humor para alivio de tensión y complicidad.",
-      "description": "Intervenciones estratégicas orientadas a provocar risa, aliviar tensión emocional y generar complicidad mediante humor contextualizado.",
-      "components": [
-        "Comentarios ingeniosos en el momento exacto",
-        "Respuestas humorísticas",
-        "Situaciones espontáneas de risa",
-        "Bromas que solo tienen sentido entre las dos"
-      ],
-      "function": "Aliviar tensión. Reforzar complicidad. Hacer la vida más ligera.",
-      "cost": "150 sonrisas + 120B",
-      "costDetail": { "besos": 120, "sonrisas": 150 },
+      "category": ["distancia", "emocional"],
+      "status": "active",
       "featured": false,
-      "status": "active"
+      "shortDesc": "Humor calibrado a la persona, al momento y a la dinámica compartida.",
+      "description": "Intervenciones estratégicas orientadas a provocar risa, aliviar tensión emocional y generar complicidad mediante humor contextualizado. No es humor genérico: es humor calibrado a la persona, al momento y a la dinámica compartida.",
+      "components": [
+        "Comentarios ingeniosos con timing preciso",
+        "Respuestas humorísticas que no interrumpen, sino que elevan",
+        "Situaciones espontáneas de risa compartida",
+        "Referencias internas y lenguaje propio de la relación"
+      ],
+      "benefits": [
+        "Alivio de tensión en momentos de estrés",
+        "Generación de complicidad y universo compartido",
+        "Mejora del estado emocional general",
+        "Recuerdos asociados a sensaciones positivas"
+      ],
+      "technicalNote": "El humor de la proveedora es inteligente, no infantil. No se recurre a chistes almacenados, sino a observaciones reales del contexto. La calidad es consistentemente alta, aunque puede verse intensificada en situaciones de alta complicidad.",
+      "cost": "150MR + 120B",
+      "costDetail": { "momentosRisa": 150, "besos": 120 }
     },
     {
       "id": "cardio-compartido",
       "name": "Cardio compartido intensivo",
-      "category": "presencial",
-      "shortDesc": "52 horas de actividad física conjunta. Sin contar los nervios del primer día.",
-      "description": "Actividad física conjunta con impacto positivo en energía, salud y conexión interpersonal.",
-      "components": [
-        "Ejercicio físico compartido",
-        "Motivación mutua",
-        "52 horas acumuladas y contando"
-      ],
-      "function": "Mejora de la salud y conexión física. Con subidón de endorfinas incluido.",
-      "cost": "52 horas juntas",
-      "costDetail": { "horas": 52 },
+      "category": ["presencial", "fisico"],
+      "status": "active",
       "featured": false,
-      "status": "active"
+      "shortDesc": "52 horas de actividad física conjunta. Sin contar los nervios del primer día.",
+      "description": "Actividad física conjunta con impacto positivo en energía, salud y conexión interpersonal. El ejercicio compartido genera un tipo de vínculo que pocas actividades pueden replicar: esfuerzo mutuo, vulnerabilidad física y motivación recíproca.",
+      "components": [
+        "Ejercicio físico compartido en distintos contextos",
+        "Motivación mutua sin presión excesiva",
+        "Coordinación de sesiones y ritmos",
+        "Presencia física activa y comprometida"
+      ],
+      "benefits": [
+        "Mejora en condición física general",
+        "Aumento de energía y vitalidad",
+        "Generación de recuerdos activos y positivos",
+        "Conexión profunda a través del esfuerzo compartido"
+      ],
+      "technicalNote": "Las 52 horas registradas son un dato real, no una exageración. La proveedora se adapta al ritmo de la clienta sin renunciar al propio. El cardio compartido tiene un componente emocional que ningún gimnasio individual puede proporcionar.",
+      "cost": "52HC",
+      "costDetail": { "horasCompartidas": 52 }
     },
     {
       "id": "gastronomico",
       "name": "Servicio gastronómico experiencial",
-      "category": "presencial",
-      "shortDesc": "25 comidas compartidas. Ninguna fue mala.",
-      "description": "Preparación y compartición de alimentos como experiencia social y emocional, orientada a generar momentos memorables alrededor de la comida.",
-      "components": [
-        "Cocina compartida",
-        "Exploración de recetas",
-        "Espacios de disfrute conjunto",
-        "Ceviche pendiente de valoración comparativa"
-      ],
-      "function": "Construir rituales compartidos. Generar recuerdos alrededor de la mesa.",
-      "cost": "25 comidas compartidas",
-      "costDetail": { "comidas": 25 },
+      "category": ["presencial", "emocional"],
+      "status": "active",
       "featured": false,
-      "status": "active"
+      "shortDesc": "25 comidas compartidas. Ninguna fue mala.",
+      "description": "Preparación y compartición de alimentos como experiencia social y emocional. Comer juntas no es una necesidad fisiológica: es un ritual de conexión, un espacio de conversación y un generador de momentos memorables.",
+      "components": [
+        "Cocina compartida con dinamismo y humor",
+        "Exploración de recetas y sabores nuevos",
+        "Espacios de disfrute conjunto sin prisa",
+        "Atención a las preferencias de la clienta"
+      ],
+      "benefits": [
+        "Alimentación de calidad en contexto emocional positivo",
+        "Recuerdos olfativos y gustativos vinculados a momentos felices",
+        "Sensación de cuidado y atención",
+        "Experiencias que perduran más allá del momento"
+      ],
+      "technicalNote": "El servicio no requiere cocina de cinco estrellas. Requiere presencia, intención y la capacidad de convertir cualquier comida en algo memorable. Eso, la proveedora lo tiene.",
+      "cost": "25C",
+      "costDetail": { "comidas": 25 }
     },
     {
       "id": "almohada-nocturna",
       "name": "Almohada nocturna signature",
-      "category": "presencial",
-      "shortDesc": "Dormir en el pecho. El servicio más solicitado. El más difícil de sustituir.",
-      "description": "Servicio de descanso premium basado en contacto físico prolongado (dormir sobre el pecho), generando sensación de seguridad, calma y cercanía emocional.",
-      "components": [
-        "Contacto físico prolongado",
-        "Regulación emocional nocturna",
-        "Generación de confianza y calma",
-        "30 noches acumuladas"
-      ],
-      "function": "Descanso de máxima calidad. Reducción de ansiedad. Sensación de hogar.",
-      "cost": "30N + 120A",
-      "costDetail": { "noches": 30, "abrazos": 120 },
+      "category": ["presencial", "fisico", "emocional"],
+      "status": "active",
       "featured": true,
-      "status": "active"
+      "shortDesc": "Dormir en el pecho. El servicio con mayor índice de satisfacción.",
+      "description": "Servicio de descanso basado en contacto físico prolongado: dormir sobre el pecho como experiencia de seguridad, calma y cercanía emocional. Uno de los servicios más demandados y con mayor impacto registrado.",
+      "components": [
+        "Contacto físico prolongado durante el descanso",
+        "Regulación emocional por proximidad",
+        "Generación de confianza y seguridad",
+        "Temperatura corporal óptima incluida"
+      ],
+      "benefits": [
+        "Mejora objetiva de la calidad del sueño",
+        "Reducción de ansiedad nocturna",
+        "Sensación profunda de estar protegida",
+        "Recuerdos de bienestar que persisten durante el día siguiente"
+      ],
+      "technicalNote": "Este es, posiblemente, el servicio con mayor retorno emocional por hora prestada. La proveedora no se mueve en exceso, no ronca (dato verificado) y mantiene una temperatura agradable. Condiciones óptimas garantizadas.",
+      "cost": "30N + 120A",
+      "costDetail": { "noches": 30, "abrazos": 120 }
     },
     {
       "id": "masajes-premium",
       "name": "Masajes terapéuticos premium",
-      "category": "presencial",
-      "shortDesc": "Sesiones de relajación física con impacto emocional positivo.",
-      "description": "Sesiones de relajación física con impacto emocional positivo, orientadas a liberar tensión y reforzar cercanía. Servicio previo a cualquier otro profesional en lista de espera.",
-      "components": [
-        "Contacto físico consciente",
-        "Atención al bienestar",
-        "Cuidado personalizado",
-        "Masajes con vela (próximamente)"
-      ],
-      "function": "Liberar tensión física. Reforzar cercanía. Bienestar integral.",
-      "cost": "180B + 90A",
-      "costDetail": { "besos": 180, "abrazos": 90 },
+      "category": ["presencial", "fisico"],
+      "status": "active",
       "featured": false,
-      "status": "active"
+      "shortDesc": "Atención consciente al cuerpo de la otra persona. Sin cita previa.",
+      "description": "Sesiones de relajación física con impacto emocional positivo, orientadas a liberar tensión acumulada y reforzar cercanía. No es un masaje de clínica: es atención consciente al cuerpo de la otra persona.",
+      "components": [
+        "Contacto físico consciente y atento",
+        "Atención a las zonas de tensión habituales",
+        "Cuidado personalizado según el estado del momento",
+        "Presencia plena durante toda la sesión"
+      ],
+      "benefits": [
+        "Liberación de tensión muscular y mental",
+        "Refuerzo de la cercanía física",
+        "Sensación de cuidado integral",
+        "Estado de calma post-sesión de duración extendida"
+      ],
+      "technicalNote": "La proveedora tiene intuición corporal desarrollada. No hace falta pedir: detecta dónde está la tensión y trabaja desde ahí. Servicio altamente recomendado después de semanas largas.",
+      "cost": "180B + 90A",
+      "costDetail": { "besos": 180, "abrazos": 90 }
     },
     {
       "id": "moto-vip",
       "name": "Transporte en moto VIP",
-      "category": "presencial",
-      "shortDesc": "Desplazamiento con estilo, confianza y alta tasa de cercanía.",
-      "description": "Servicio de movilidad con componente experiencial, combinando desplazamiento funcional con cercanía y conexión durante el trayecto.",
-      "components": [
-        "Traslado físico con eficiencia",
-        "Experiencia compartida",
-        "Interacción durante trayecto",
-        "Alternativa superior al transporte público"
-      ],
-      "function": "Movilidad con experiencia. Cercanía en movimiento.",
-      "cost": "100A + 80B",
-      "costDetail": { "abrazos": 100, "besos": 80 },
+      "category": ["presencial", "fisico"],
+      "status": "active",
       "featured": false,
-      "status": "active"
+      "shortDesc": "El trayecto deja de ser un medio y se convierte en parte de la experiencia.",
+      "description": "Servicio de movilidad con componente experiencial: desplazamiento funcional combinado con cercanía, contacto y conexión. El trayecto deja de ser un medio y se convierte en parte de la experiencia.",
+      "components": [
+        "Traslado físico seguro y con estilo",
+        "Experiencia sensorial compartida",
+        "Interacción durante el trayecto",
+        "Sensación de confianza en la conducción"
+      ],
+      "benefits": [
+        "Llegada al destino con buen ánimo",
+        "Momentos únicos generados durante el desplazamiento",
+        "Ahorro en transporte urbano (beneficio colateral no despreciable)",
+        "Contacto físico en movimiento, que tiene su propio valor"
+      ],
+      "technicalNote": "La proveedora conduce con criterio. El casco está incluido. La máquina también.",
+      "cost": "100A + 80B",
+      "costDetail": { "abrazos": 100, "besos": 80 }
     },
     {
       "id": "padel-remada",
       "name": "Pádel & remada experience",
-      "category": "presencial",
-      "shortDesc": "Actividades deportivas compartidas con complicidad incluida.",
-      "description": "Actividades deportivas recreativas compartidas con enfoque en disfrute, coordinación y complicidad.",
-      "components": [
-        "Actividad física recreativa",
-        "Interacción lúdica",
-        "Coordinación conjunta",
-        "Competitividad controlada"
-      ],
-      "function": "Diversión compartida. Complicidad en movimiento.",
-      "cost": "15 planes activos",
-      "costDetail": { "planes": 15 },
+      "category": ["presencial", "fisico"],
+      "status": "active",
       "featured": false,
-      "status": "active"
+      "shortDesc": "Deporte en pareja con lenguaje no verbal propio. Risas garantizadas.",
+      "description": "Actividades deportivas compartidas con enfoque en disfrute, coordinación y complicidad. El deporte en pareja genera un lenguaje no verbal propio: saber anticiparse, apoyarse, celebrar y reírse juntas del caos.",
+      "components": [
+        "Actividad física recreativa en distintos formatos",
+        "Interacción lúdica con competitividad sana",
+        "Coordinación y adaptación mutua",
+        "Celebración de logros pequeños y grandes"
+      ],
+      "benefits": [
+        "Disfrute físico y emocional simultáneo",
+        "Generación de recuerdos activos",
+        "Desarrollo de complicidad no verbal",
+        "Risas garantizadas, independientemente del resultado"
+      ],
+      "technicalNote": "El nivel deportivo de la proveedora es el apropiado para garantizar reto sin frustración. Se adapta. Pero también compite. Eso la hace mejor compañera de juego.",
+      "cost": "15P",
+      "costDetail": { "planes": 15 }
     },
     {
       "id": "equipaje-cuidadora",
       "name": "Carga de equipaje (modo cuidadora)",
-      "category": "presencial",
-      "shortDesc": "Asistencia física con enfoque en cuidado y protección.",
-      "description": "Asistencia física en situaciones de necesidad, especialmente vinculada a cuidado, apoyo y protección directa.",
+      "category": ["presencial", "fisico"],
+      "status": "active",
+      "featured": false,
+      "shortDesc": "Cargar el equipaje de alguien es decir 'yo me encargo para que tú vayas más ligera'.",
+      "description": "Asistencia física en situaciones de necesidad, especialmente vinculadas al cuidado cotidiano. Cargar el equipaje de alguien es, en el fondo, un gesto de protección: decir 'yo me encargo de esto para que tú puedas ir más ligera'.",
       "components": [
         "Ayuda práctica sin que haga falta pedirla",
-        "Protección física",
-        "Acto de cuidado directo"
+        "Protección física discreta",
+        "Acto de cuidado directo y concreto",
+        "Presencia que facilita el movimiento de la otra"
       ],
-      "function": "Cuidado sin condiciones. Estar ahí antes de que haga falta pedirlo.",
+      "benefits": [
+        "Desplazamiento más cómodo",
+        "Sensación de ser cuidada sin paternalismos",
+        "Recuerdo de que hay alguien que está pendiente"
+      ],
+      "technicalNote": "El servicio se presta de forma espontánea. La proveedora no espera a que le pidan; detecta la necesidad y actúa. Eso tiene valor propio más allá del esfuerzo físico.",
       "cost": "120A",
-      "costDetail": { "abrazos": 120 },
-      "featured": false,
-      "status": "active"
+      "costDetail": { "abrazos": 120 }
     },
     {
       "id": "recogida-estacion",
       "name": "Recogida en estación premium",
-      "category": "presencial",
-      "shortDesc": "Recepción personalizada. Sensación de llegada a casa incluida.",
-      "description": "Recepción personalizada con alto contenido emocional, generando sensación de llegada a un espacio seguro.",
+      "category": ["presencial", "emocional"],
+      "status": "active",
+      "featured": false,
+      "shortDesc": "La diferencia entre llegar a un lugar y llegar a alguien.",
+      "description": "Recepción personalizada con alto contenido emocional: llegar a un sitio y encontrar a alguien esperándote genera una sensación que ningún hotel ni taxi puede replicar. Es la diferencia entre llegar a un lugar y llegar a alguien.",
       "components": [
         "Encuentro presencial en punto de llegada",
-        "Expresión emocional inmediata",
-        "Generación de momento significativo",
-        "Sin demoras ni retrasos"
+        "Expresión emocional en el reencuentro",
+        "Generación de momento significativo desde el primer segundo",
+        "Transición de viaje a presencia compartida"
       ],
-      "function": "Hacer que llegar sea un momento, no un trámite.",
+      "benefits": [
+        "Reducción inmediata del estrés del viaje",
+        "Sensación de bienvenida genuina",
+        "Arranque emocional positivo para todo lo que sigue",
+        "Recuerdo que se activa cada vez que se piensa en llegar"
+      ],
+      "technicalNote": "La proveedora aparece. Eso, que parece mínimo, es todo.",
       "cost": "80A + 40B",
-      "costDetail": { "abrazos": 80, "besos": 40 },
-      "featured": false,
-      "status": "active"
+      "costDetail": { "abrazos": 80, "besos": 40 }
     },
     {
       "id": "curaduria-musical",
       "name": "Curaduría musical & cine exclusiva",
-      "category": "distancia",
-      "shortDesc": "Selección de contenido cultural de calidad. Para evitar exposición a material cuestionable.",
-      "description": "Selección de contenido cultural con criterios de calidad, con el objetivo de mejorar la experiencia de consumo. El servicio de cine incluye condiciones especiales de visualización (pausas autorizadas, mimos continuos).",
-      "components": [
-        "Recomendaciones musicales curadas",
-        "Selección cinematográfica de calidad",
-        "Acompañamiento durante consumo",
-        "Máximo 3 pausas por película (previa negociación)"
-      ],
-      "function": "Mejorar la calidad del ocio. Compartir experiencias culturales aunque estemos lejos.",
-      "cost": "90B + 20P",
-      "costDetail": { "besos": 90, "planes": 20 },
+      "category": ["distancia", "emocional"],
+      "status": "active",
       "featured": false,
-      "status": "active"
+      "shortDesc": "Criterio sólido, diverso y no dogmático. Protección activa frente al mal cine.",
+      "description": "Selección de contenido cultural con criterios de calidad contrastados, orientada a mejorar la experiencia de consumo y evitar la exposición a material que no está a la altura de la clienta.",
+      "components": [
+        "Recomendaciones musicales contextualizadas",
+        "Selección cinematográfica con criterio",
+        "Contextualización y acompañamiento en el consumo",
+        "Protección activa frente al mal cine"
+      ],
+      "benefits": [
+        "Acceso a contenido de mayor calidad",
+        "Ahorro de tiempo en búsqueda y toma de decisiones",
+        "Experiencias culturales compartidas con más profundidad",
+        "Conversaciones más interesantes después de cada consumo"
+      ],
+      "technicalNote": "El criterio de la proveedora es sólido, diverso y no dogmático. Recomienda lo que considera bueno, no lo que está de moda. Eso marca la diferencia.",
+      "cost": "90B + 20P",
+      "costDetail": { "besos": 90, "planes": 20 }
     },
     {
       "id": "mimos-presenciales",
       "name": "Mimos presenciales high-end",
-      "category": "presencial",
-      "shortDesc": "Contacto físico de alta calidad emocional. El más difícil de replicar.",
-      "description": "Interacción física directa de alta calidad emocional, con impacto significativo en bienestar y conexión. El servicio más demandado y el de mayor impacto acumulado.",
+      "category": ["presencial", "fisico", "emocional"],
+      "status": "active",
+      "featured": false,
+      "shortDesc": "Requiere conexión real. No se puede fingir.",
+      "description": "Interacción física directa de alta calidad emocional: contacto, afecto, presencia consciente. El servicio más básico en apariencia y el más complejo en ejecución. Requiere conexión real. No se puede fingir.",
       "components": [
-        "Contacto físico de calidad",
-        "Expresión de afecto presencial",
-        "Presencia consciente",
-        "Sin sustituto equivalente en el mercado"
+        "Contacto físico con intención y presencia",
+        "Expresión de afecto en formatos variados",
+        "Presencia plena: sin distracciones, sin prisas",
+        "Calidad sostenida a lo largo del tiempo"
       ],
-      "function": "Conexión real. El tipo de presencia que no se puede replicar.",
+      "benefits": [
+        "Impacto emocional positivo inmediato y duradero",
+        "Refuerzo de la conexión interpersonal",
+        "Bienestar físico y emocional simultáneos",
+        "Sensación de ser vista, elegida y cuidada"
+      ],
+      "technicalNote": "Este servicio no se puede subcontratar ni automatizar. Requiere a la proveedora. Eso, en sí mismo, es parte del valor.",
       "cost": "300A + 180B",
-      "costDetail": { "abrazos": 300, "besos": 180 },
-      "featured": false,
-      "status": "active"
+      "costDetail": { "abrazos": 300, "besos": 180 }
     },
     {
-      "id": "hipnosis",
-      "name": "Hipnosis",
-      "category": "presencial",
-      "shortDesc": "Servicio reservado. Potencial transformador. Pendiente de ejecución.",
-      "description": "Servicio con potencial de ejecución futura, orientado a experiencias más profundas de interacción. Los detalles permanecen clasificados hasta su activación.",
-      "components": [
-        "Contenido clasificado",
-        "Activación pendiente",
-        "Alto potencial de impacto"
-      ],
-      "function": "Clasificado.",
-      "cost": "Por definir",
-      "costDetail": {},
+      "id": "contenido-visual",
+      "name": "Envío estratégico de contenido visual sugerente",
+      "category": ["distancia", "emocional"],
+      "status": "active",
       "featured": false,
-      "status": "active"
+      "shortDesc": "Contenido elegante, insinuado y estratégicamente inesperado. El factor sorpresa es esencial.",
+      "description": "Servicio orientado a la generación y envío ocasional de contenido visual cuidadosamente seleccionado, con un enfoque sugerente, estético y estratégicamente inesperado, diseñado para provocar impacto positivo inmediato en la clienta. Las imágenes mantienen un equilibrio entre lo atractivo, lo elegante y lo insinuado, activando la imaginación sin necesidad de explicitud.",
+      "components": [
+        "Contenido visual seleccionado con criterio estético",
+        "Factor sorpresa: envío en momentos no anticipados",
+        "Equilibrio entre sugerente y elegante",
+        "Frecuencia variable para mantener el interés activo"
+      ],
+      "benefits": [
+        "Estimulación visual elegante y sugerente",
+        "Incremento del interés y expectativa",
+        "Activación de imaginación y curiosidad",
+        "Refuerzo del vínculo mediante juego visual y reciprocidad"
+      ],
+      "technicalNote": "El servicio se ejecuta bajo criterio exclusivo de la proveedora, quien determinará el momento óptimo de envío para maximizar el efecto sorpresa. La frecuencia no es fija, lo que incrementa su valor percibido.",
+      "cost": "180B + 120A + contenido visual de la clienta",
+      "costDetail": { "besos": 180, "abrazos": 120 }
     },
     {
-      "id": "descifrado-mensajes",
-      "name": "Descifrado avanzado de mensajes (modo acertijo)",
-      "category": "distancia",
-      "shortDesc": "Mensajes escritos a máxima velocidad. Ortografía libre. Requieren interpretación avanzada.",
-      "description": "Servicio mediante el cual la proveedora emite mensajes espontáneos escritos a alta velocidad, con ortografía creativa y puntuación impredecible. La clienta los descifra activando conexión emocional real.",
-      "components": [
-        "Mensajes de alta velocidad con ortografía creativa",
-        "25 momentos de '¿qué quiso decir?' resueltos con éxito",
-        "Estimulación cognitiva constante",
-        "Complicidad demostrable"
-      ],
-      "function": "Conexión real con ortografía honesta. Cada mensaje es único.",
-      "technicalNote": "El servicio se presta de forma continua e impredecible. Su nivel de dificultad varía según el estado emocional y la velocidad de escritura.",
-      "cost": "180B + 140A",
-      "costDetail": { "besos": 180, "abrazos": 140 },
+      "id": "generacion-recuerdos",
+      "name": "Generación estratégica de recuerdos e imágenes mentales positivas",
+      "category": ["presencial", "emocional"],
+      "status": "active",
       "featured": false,
-      "status": "active"
+      "shortDesc": "Momentos diseñados para quedarse. Banco de recuerdos activables para insomnio y nostalgia.",
+      "description": "Servicio orientado a la creación intencional de experiencias compartidas con alto impacto emocional positivo, diseñadas para permanecer en la memoria de la clienta como imágenes mentales claras, agradables y recurrentes. Este servicio no solo opera en el momento presente, sino que extiende su efecto en el tiempo.",
+      "components": [
+        "Estructuración consciente (y aparentemente natural) de momentos significativos",
+        "35 recuerdos activables generados",
+        "Múltiples sonrisas involuntarias documentadas",
+        "Mejora en la conciliación del sueño"
+      ],
+      "benefits": [
+        "Acceso a banco interno de recuerdos positivos",
+        "Mejora en el descanso nocturno",
+        "Acompañamiento emocional incluso en ausencia física",
+        "Aumento de bienestar general al evocar experiencias compartidas",
+        "Alta probabilidad de aparición de la proveedora en sueños (no garantizado, pero altamente probable 😏)"
+      ],
+      "technicalNote": "El servicio se ejecuta de manera continua y acumulativa. Su efectividad depende de la calidad de las experiencias generadas y el nivel de conexión emocional. Los resultados observados hasta la fecha son altamente favorables.",
+      "cost": "260B + 180A + 35 recuerdos activables",
+      "costDetail": { "besos": 260, "abrazos": 180 }
     },
     {
       "id": "antistress-urbano",
       "name": "Anti-estrés urbano premium",
-      "category": "distancia",
-      "shortDesc": "Acompañamiento remoto en transporte público con humor, datos curiosos y mucha paciencia.",
-      "description": "Servicio de acompañamiento remoto durante trayectos en transporte público, transformando un desplazamiento ordinario en una experiencia ligera y reconfortante.",
+      "category": ["distancia", "emocional"],
+      "status": "active",
+      "featured": true,
+      "shortDesc": "Transforma un desplazamiento ordinario en algo llevadero y entretenido.",
+      "description": "Servicio de acompañamiento remoto durante trayectos en transporte público, especialmente en contextos de cansancio, estrés o saturación mental. Transforma un desplazamiento ordinario en una experiencia ligera, entretenida y emocionalmente reconfortante.",
       "components": [
         "Mensajes en tiempo real durante el trayecto",
-        "Ocurrencias espontáneas",
-        "25 datos curiosos aportados",
-        "40 momentos de risa comprobables"
+        "Ocurrencias espontáneas calibradas al estado de la clienta",
+        "25 datos curiosos de interés general aportados",
+        "Humor contextualizado y referencias culturales",
+        "Compatibilidad total con cualquier línea de metro o renfe"
       ],
-      "function": "Hacer que el metro sea soportable. Hacer que el tiempo pase de otra manera.",
-      "cost": "220B + 160A",
-      "costDetail": { "besos": 220, "abrazos": 160 },
-      "featured": true,
-      "status": "active"
+      "benefits": [
+        "Reducción del estrés urbano: trayectos más llevaderos",
+        "Entretenimiento continuo en momentos clave",
+        "Estimulación ligera sin esfuerzo",
+        "Sensación de compañía incluso a distancia",
+        "Mejora acumulativa del ánimo tras cada uso"
+      ],
+      "technicalNote": "El servicio se activa de forma flexible: espontánea o bajo demanda. Su intensidad se ajusta según el nivel de estrés de la clienta, la duración del trayecto y el flujo creativo de la proveedora.",
+      "cost": "220B + 160A + 40MR",
+      "costDetail": { "besos": 220, "abrazos": 160, "momentosRisa": 40 }
+    },
+    {
+      "id": "descifrado-mensajes",
+      "name": "Descifrado avanzado de mensajes (modo acertijo)",
+      "category": ["distancia", "emocional"],
+      "status": "active",
+      "featured": false,
+      "shortDesc": "Ortografía creativa (no incorrecta: creativa). Solo personas con vínculo real logran descifrar correctamente.",
+      "description": "Servicio exclusivo mediante el cual la proveedora emite mensajes espontáneos escritos a alta velocidad, con estructura libre, ortografía creativa y puntuación impredecible. La clienta descifra, interpreta y reconstruye el contenido real del mensaje, convirtiendo la comunicación cotidiana en una experiencia dinámica y altamente estimulante.",
+      "components": [
+        "Mensajes con estructura libre y velocidad de escritura elevada",
+        "Ortografía creativa (no incorrecta: creativa)",
+        "Contenido real y valioso bajo el aparente caos",
+        "Dinámica de descifrado compartida"
+      ],
+      "benefits": [
+        "Estimulación mental constante",
+        "Entrenamiento en comunicación contextual",
+        "Aumento de complicidad: solo personas con vínculo real logran descifrar correctamente",
+        "Factor entretenimiento: cada mensaje es un mini reto",
+        "Refuerzo emocional al darse cuenta de que entiende a la proveedora mejor que nadie"
+      ],
+      "technicalNote": "El servicio se presta de forma continua e impredecible. El hecho de que la clienta entienda los mensajes es, en sí mismo, evidencia de conexión real.",
+      "cost": "180B + 140A",
+      "costDetail": { "besos": 180, "abrazos": 140 }
     },
     {
       "id": "clases-baile",
       "name": "Clases de baile íntimas",
-      "category": "presencial",
-      "shortDesc": "Coordinación física con componente lúdico. Pisotones no incluidos.",
-      "description": "Espacio de interacción física coordinada con componente lúdico y emocional. Las sesiones combinan conexión física y disfrute mutuo.",
-      "components": [
-        "15 sesiones acumuladas",
-        "Conexión física y lúdica",
-        "Tolerancia mutua ante errores de coordinación"
-      ],
-      "function": "Moverse juntas. Reírse juntas. Construir un lenguaje físico compartido.",
-      "cost": "15 sesiones + 60A",
-      "costDetail": { "abrazos": 60, "sesiones": 15 },
+      "category": ["presencial", "fisico", "emocional"],
+      "status": "active",
       "featured": false,
-      "status": "active"
+      "shortDesc": "Confianza, ritmo, vulnerabilidad y disfrute simultáneos. Pisotones no incluidos.",
+      "description": "Espacio de interacción física coordinada con componente lúdico y emocional. El baile compartido genera un tipo de comunicación no verbal que va más allá de las palabras: confianza, ritmo, vulnerabilidad y disfrute simultáneos.",
+      "components": [
+        "Enseñanza y aprendizaje mutuo",
+        "Espacio seguro para el ridículo compartido",
+        "Coordinación progresiva y mejora visible",
+        "Risas incluidas sin coste adicional"
+      ],
+      "benefits": [
+        "Desarrollo de confianza corporal",
+        "Experiencia de conexión no verbal profunda",
+        "Momento de ligereza y juego garantizado",
+        "Habilidad transferible a otros contextos"
+      ],
+      "technicalNote": "No se requiere nivel previo. Se requiere disposición. El resto lo pone la proveedora.",
+      "cost": "15 sesiones + 60A",
+      "costDetail": { "sesiones": 15, "abrazos": 60 }
     },
     {
       "id": "abrazos-distancia",
       "name": "Abrazos a larga distancia",
-      "category": "distancia",
-      "shortDesc": "Conexión emocional sin presencia física. 120 abrazos simbólicos acumulados.",
-      "description": "Sistema simbólico de conexión emocional en ausencia física. Genera efecto de presencia y calma medibles.",
-      "components": [
-        "120 abrazos emocionales acumulados",
-        "60 mensajes 'te pienso'",
-        "Efecto calma documentado"
-      ],
-      "function": "Presencia sin presencia. Conexión sin contacto. Imposible y sin embargo real.",
-      "cost": "120A + 60ME",
-      "costDetail": { "abrazos": 120, "mensajesEmocionales": 60 },
+      "category": ["distancia", "emocional"],
+      "status": "active",
       "featured": false,
-      "status": "active"
+      "shortDesc": "La distancia es física, no emocional.",
+      "description": "Sistema simbólico de conexión emocional en ausencia física. Cuando no es posible el contacto real, existe la intención clara de él: mensajes que funcionan como abrazos, presencia que no desaparece por la distancia.",
+      "components": [
+        "Mensajes con carga afectiva explicitada",
+        "Expresiones de cercanía en momentos de ausencia",
+        "Recordatorios de que la distancia es física, no emocional",
+        "Consistencia: el servicio no cae en desuso entre visitas"
+      ],
+      "benefits": [
+        "Reducción del impacto emocional de la distancia",
+        "Sensación de continuidad en el vínculo",
+        "Bienestar en momentos de soledad",
+        "Recordatorio constante de que hay alguien al otro lado"
+      ],
+      "technicalNote": "La distancia entre Barcelona y Madrid es de aproximadamente 621 km. Este servicio opera con independencia de ese dato.",
+      "cost": "120A + 60ME",
+      "costDetail": { "abrazos": 120, "mensajesEmocionales": 60 }
     },
     {
-      "id": "generacion-recuerdos",
-      "name": "Generación estratégica de recuerdos",
-      "category": "presencial",
-      "shortDesc": "Momentos diseñados para quedarse. Banco de recuerdos activables para insomnio y nostalgia.",
-      "description": "Creación intencional de experiencias con huella emocional permanente. Los recuerdos generados funcionan como recurso interno disponible para la clienta en cualquier momento.",
-      "components": [
-        "35 recuerdos activables generados",
-        "Múltiples sonrisas involuntarias documentadas",
-        "Mejora en conciliación del sueño",
-        "Alta probabilidad de aparición en sueños (no garantizado)"
-      ],
-      "function": "Construir una historia. Dejar huella. Tener algo a lo que volver.",
-      "technicalNote": "La efectividad depende de la calidad de las experiencias y el nivel de conexión. Los resultados observados hasta la fecha son altamente favorables.",
-      "cost": "260B + 180A",
-      "costDetail": { "besos": 260, "abrazos": 180 },
+      "id": "stickers-demanda",
+      "name": "Creación de stickers bajo demanda — Edición Sonrisa Garantizada",
+      "category": ["distancia", "emocional"],
+      "status": "active",
       "featured": false,
-      "status": "active"
+      "shortDesc": "Sonrisa refleja garantizada en menos de 3 segundos. Tiempo medio verificado.",
+      "description": "Servicio de diseño y emisión de stickers personalizados, creados artesanalmente en tiempo real según el estado emocional del momento, la necesidad de la clienta o el impulso creativo de la proveedora. Cada sticker es una pieza única, irrepetible y calibrada para generar una respuesta emocional específica: desde la sonrisa involuntaria hasta la carcajada descontrolada, pasando por el 'ay, qué tonta' con ternura implícita.",
+      "components": [
+        "Stickers de situación: creados ante contextos específicos, sin preaviso",
+        "Stickers de emergencia emocional: activados cuando la clienta necesita sonreír sin saberlo",
+        "Stickers de campaña: series temáticas para ocasiones especiales",
+        "Stickers de respuesta: diseñados para superar cualquier sticker recibido"
+      ],
+      "benefits": [
+        "Ruptura inmediata del estado emocional plano",
+        "Sonrisa refleja en menos de 3 segundos (tiempo medio verificado)",
+        "Refuerzo del vínculo mediante humor visual compartido",
+        "Creación de lenguaje propio e intransferible entre las partes",
+        "Entretenimiento de alta calidad sin coste en esfuerzo"
+      ],
+      "technicalNote": "El servicio opera sin horario ni preaviso. La efectividad aumenta en proporción directa a la resistencia inicial de la clienta.",
+      "cost": "ST de vuelta + B proporcionales a la efectividad",
+      "costDetail": { "stickers": "variable", "besos": "proporcional" }
     },
     {
       "id": "relajacion-integral",
       "name": "Activación de relajación integral bajo demanda",
-      "category": "presencial",
-      "shortDesc": "El más esperado. Muestra gratuita incluida. Miércoles 14 de mayo.",
-      "description": "Servicio premium diseñado para inducir un estado progresivo de bienestar mediante una combinación cuidadosamente orquestada de estímulos físicos y afectivos. La ejecución sigue un ritmo intencional, lento y envolvente.",
+      "category": ["presencial", "fisico", "emocional"],
+      "status": "upcoming",
+      "featured": true,
+      "shortDesc": "El más esperado. Muestra gratuita incluida en próxima visita.",
+      "description": "Servicio premium diseñado para inducir un estado progresivo de desconexión, bienestar y tensión placentera mediante una combinación cuidadosamente orquestada de estímulos físicos y afectivos. La ejecución sigue un ritmo intencional, lento y envolvente, en el que cada interacción está pensada para reducir resistencias, aumentar la sensibilidad y generar una experiencia difícil de interrumpir una vez iniciada.",
       "components": [
         "Masajes de ejecución progresiva con intensidad adaptable",
-        "Mimos presenciales prolongados",
+        "Mimos presenciales prolongados y estratégicamente distribuidos",
         "Contacto físico cercano y sostenido",
-        "Estímulos diseñados para generar anticipación"
+        "Estímulos afectivos diseñados para generar anticipación y disfrute",
+        "Secuencias de interacción orientadas a prolongar la experiencia"
       ],
-      "function": "Inducir bienestar. Crear conexión intensa. Generar un estado que no quieras que termine.",
       "benefits": [
         "Relajación profunda y sostenida",
         "Conexión intensificada",
+        "Incremento del disfrute y la expectativa",
         "Desconexión progresiva del entorno externo"
       ],
       "sideEffects": [
         "Incremento notable en la demanda del servicio",
-        "Dificultad para finalizar sin solicitar extensión"
+        "Reducción de la resistencia ante futuros estímulos",
+        "Dificultad para finalizar la experiencia sin solicitar extensión",
+        "Respuestas involuntarias asociadas al nivel de relajación alcanzado"
       ],
-      "promotionalNote": "Muestra gratuita incluida en próxima visita presencial (Barcelona, 14 mayo).",
-      "cost": "260B + 200A",
-      "costDetail": { "besos": 260, "abrazos": 200 },
-      "featured": true,
-      "status": "upcoming"
+      "promotionalNote": "Con motivo de la próxima activación presencial, se incluye una muestra gratuita del servicio. Primera fase: contacto inicial con estímulos suaves. Segunda fase: incremento de la intensidad. Fase final: activación controlada en entorno privado.",
+      "technicalNote": "La muestra tiene carácter introductorio. La experiencia completa podrá activarse bajo demanda, con intensidad ajustable.",
+      "cost": "260B + 200A + activación bajo demanda",
+      "costDetail": { "besos": 260, "abrazos": 200 }
     },
     {
       "id": "masajes-vela",
       "name": "Masajes con vela",
-      "category": "presencial",
+      "category": ["proximamente"],
+      "status": "upcoming",
+      "featured": false,
       "shortDesc": "Solicitado expresamente. En agenda. Alta expectativa documentada.",
       "description": "Servicio de relajación avanzada con componente sensorial adicional. Solicitado expresamente por la clienta con anterioridad a cualquier prestador externo.",
       "components": [
-        "Relajación con componente sensorial",
-        "Solicitado con anticipación (marca buen gusto)",
-        "En agenda para próxima visita"
+        "Masaje con aceite de vela templado",
+        "Componente sensorial elevado",
+        "Ambiente diseñado para la experiencia"
       ],
-      "function": "Sensorial. Presente. Necesario.",
+      "benefits": [
+        "Relajación profunda con estimulación sensorial adicional",
+        "Experiencia única difícilmente replicable"
+      ],
       "cost": "Por acordar",
-      "costDetail": {},
-      "featured": false,
-      "status": "upcoming"
+      "costDetail": {}
     },
     {
-      "id": "sistema-recompensa-postural",
+      "id": "sistema-recompensa",
       "name": "Sistema de recompensa postural",
-      "category": "distancia",
+      "category": ["proximamente"],
+      "status": "upcoming",
+      "featured": false,
       "shortDesc": "Programa de incentivos para mejora progresiva. Requiere honestidad total.",
       "description": "Programa de incentivos basado en seguimiento honesto de mejora postural. La clienta reporta su progreso y recibe recompensas variables en función de la mejora registrada.",
       "components": [
-        "Seguimiento diario de progreso",
+        "Seguimiento honesto del progreso",
         "Recompensas en besos, abrazos y cupones variables",
         "Modo 'ojitos de gatito' en caso de retroceso",
         "Honestidad como requisito contractual"
       ],
-      "function": "Salud y cuidado mutuo. Con incentivos afectivos reales.",
+      "benefits": [
+        "Mejora postural progresiva con incentivo emocional",
+        "Sistema de recompensa que hace el proceso llevadero"
+      ],
       "cost": "Variable · basado en progreso",
-      "costDetail": {},
+      "costDetail": {}
+    },
+    {
+      "id": "hipnosis",
+      "name": "Hipnosis",
+      "category": ["proximamente"],
+      "status": "upcoming",
       "featured": false,
-      "status": "upcoming"
+      "shortDesc": "Programado. Activación bajo necesidad. Alto potencial documentado.",
+      "description": "Servicio reservado con potencial de ejecución futura, orientado a experiencias más profundas de interacción. Los detalles permanecen clasificados hasta su activación.",
+      "components": [
+        "Contenido clasificado hasta nuevo aviso",
+        "Activación bajo necesidad o demanda",
+        "Alto potencial de impacto confirmado"
+      ],
+      "benefits": ["Por determinar en el momento de activación"],
+      "technicalNote": "Estado: programado. La fecha de activación depende de factores externos aún por determinar. Se anticipa que la valoración será elevada.",
+      "cost": "Por definir (se anticipa que será elevada)",
+      "costDetail": {}
     }
   ]
 }

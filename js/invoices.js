@@ -191,7 +191,7 @@
 
     globalTotals.innerHTML = `
       <div class="resumen-total">
-        <div class="r-label">Totales acumulados · Desde septiembre 2025</div>
+        <div class="r-label">Totales acumulados · Desde noviembre 2025</div>
         <div class="r-values">
           ${Object.entries(totals).map(([k, v]) => `<span>${v}</span> ${k}`).join(' · ')}
         </div>

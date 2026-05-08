@@ -3,11 +3,13 @@
   let services = [];
   let filtered = [];
   let activeFilter = 'all';
+  let searchQuery = '';
   let drawerIndex = 0;
 
   const grid = document.getElementById('services-grid');
   const upcomingGrid = document.getElementById('upcoming-grid');
   const filters = document.querySelectorAll('.filter-btn');
+  const searchInput = document.getElementById('service-search');
   const drawer = document.getElementById('service-drawer');
   const drawerOverlay = document.getElementById('drawer-overlay');
   const drawerClose = document.getElementById('drawer-close');
@@ -33,43 +35,56 @@
       distancia: 'Distancia',
       fisico: 'Físico',
       emocional: 'Emocional',
-      upcoming: 'Próximamente'
+      proximamente: 'Próximamente'
     };
     return map[cat] || cat;
   }
 
-  function pillClass(cat) {
-    const map = {
-      presencial: 'pill--presencial',
-      distancia: 'pill--distancia',
-      fisico: 'pill--fisico',
-      emocional: 'pill--emocional'
-    };
-    return map[cat] || 'pill--gold';
+  function renderPills(categories) {
+    const cats = Array.isArray(categories) ? categories : [categories];
+    return cats
+      .filter(c => c !== 'proximamente')
+      .map(c => `<span class="pill pill--cat">${categoryLabel(c)}</span>`)
+      .join('');
   }
 
   function renderGrid() {
     if (!grid) return;
 
-    filtered = activeFilter === 'all'
-      ? activeServices
-      : activeServices.filter(s => s.category === activeFilter);
+    if (searchQuery) {
+      filtered = activeServices.filter(s =>
+        s.name.toLowerCase().includes(searchQuery)
+      );
+    } else if (activeFilter === 'all') {
+      filtered = activeServices;
+    } else if (activeFilter === 'proximamente') {
+      filtered = upcomingServices;
+    } else {
+      filtered = activeServices.filter(s =>
+        Array.isArray(s.category)
+          ? s.category.includes(activeFilter)
+          : s.category === activeFilter
+      );
+    }
 
     if (filtered.length === 0) {
-      grid.innerHTML = '<p style="color:#bbb;text-align:center;padding:40px;grid-column:1/-1;">No hay servicios en esta categoría.</p>';
+      grid.innerHTML = '<p style="color:#bbb;text-align:center;padding:40px;grid-column:1/-1;">No se encontraron servicios con ese nombre.</p>';
       return;
     }
 
+    const isUpcoming = !searchQuery && activeFilter === 'proximamente';
     grid.innerHTML = filtered.map((s, i) => `
-      <div class="card service-card" data-index="${i}" role="button" tabindex="0" aria-label="Ver detalle: ${s.name}">
+      <div class="card service-card${isUpcoming ? ' upcoming' : ''}" data-index="${i}" role="button" tabindex="0" aria-label="Ver detalle: ${s.name}">
         <div class="service-card__top">
-          <span class="pill ${pillClass(s.category)}">${categoryLabel(s.category)}</span>
+          ${isUpcoming
+            ? '<span class="pill pill--upcoming">Próximamente</span>'
+            : renderPills(s.category)}
         </div>
         <h3>${s.name}</h3>
         <p class="short-desc">${s.shortDesc}</p>
         <div class="service-card__footer">
           <span class="cost-mini">${s.cost}</span>
-          <span style="font-size:0.8rem;color:var(--gold);">Ver detalle →</span>
+          <button class="btn-detail">Ver detalle →</button>
         </div>
       </div>
     `).join('');
@@ -84,8 +99,8 @@
   function renderUpcoming() {
     if (!upcomingGrid || upcomingServices.length === 0) return;
 
-    upcomingGrid.innerHTML = upcomingServices.map(s => `
-      <div class="card service-card upcoming">
+    upcomingGrid.innerHTML = upcomingServices.map((s, i) => `
+      <div class="card service-card upcoming" data-upcoming-index="${i}" role="button" tabindex="0" aria-label="Ver detalle: ${s.name}">
         <div class="service-card__top">
           <span class="pill pill--upcoming">Próximamente</span>
         </div>
@@ -93,9 +108,20 @@
         <p class="short-desc">${s.shortDesc}</p>
         <div class="service-card__footer">
           <span class="cost-mini">${s.cost}</span>
+          <button class="btn-detail">Ver detalle →</button>
         </div>
       </div>
     `).join('');
+
+    upcomingGrid.querySelectorAll('.service-card').forEach(card => {
+      const open = () => {
+        const idx = parseInt(card.dataset.upcomingIndex);
+        filtered = upcomingServices;
+        openDrawer(idx);
+      };
+      card.addEventListener('click', open);
+      card.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') open(); });
+    });
   }
 
   function openDrawer(index) {
@@ -119,6 +145,10 @@
     drawerPrev.disabled = drawerIndex === 0;
     drawerNext.disabled = drawerIndex === filtered.length - 1;
 
+    const pillsHTML = Array.isArray(s.category) && !s.category.includes('proximamente')
+      ? renderPills(s.category)
+      : '<span class="pill pill--upcoming">Próximamente</span>';
+
     const componentsHTML = s.components
       ? `<h4>Componentes del servicio</h4>
          <ul>${s.components.map(c => `<li>${c}</li>`).join('')}</ul>`
@@ -134,8 +164,12 @@
          <ul>${s.sideEffects.map(e => `<li>${e}</li>`).join('')}</ul>`
       : '';
 
-    const noteHTML = (s.technicalNote || s.promotionalNote)
-      ? `<div class="drawer-note">${s.technicalNote || s.promotionalNote}</div>`
+    const technicalNoteHTML = s.technicalNote
+      ? `<div class="drawer-note">${s.technicalNote}</div>`
+      : '';
+
+    const promotionalNoteHTML = s.promotionalNote
+      ? `<div class="drawer-note drawer-note--promo">${s.promotionalNote}</div>`
       : '';
 
     const functionHTML = s.function
@@ -143,7 +177,7 @@
       : '';
 
     drawerContent.innerHTML = `
-      <span class="pill ${pillClass(s.category)}" style="margin-bottom:8px;">${categoryLabel(s.category)}</span>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;">${pillsHTML}</div>
       <h3>${s.name}</h3>
       <p class="description">${s.description}</p>
       <div class="cost">${s.cost}</div>
@@ -151,7 +185,8 @@
       ${benefitsHTML}
       ${sideEffectsHTML}
       ${functionHTML}
-      ${noteHTML}
+      ${technicalNoteHTML}
+      ${promotionalNoteHTML}
     `;
   }
 
@@ -164,6 +199,14 @@
       renderGrid();
     });
   });
+
+  // Search
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      searchQuery = searchInput.value.trim().toLowerCase();
+      renderGrid();
+    });
+  }
 
   // Drawer navigation
   if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
@@ -187,6 +230,16 @@
     if (e.key === 'ArrowRight' && drawerIndex < filtered.length - 1) { drawerIndex++; renderDrawerContent(); }
   });
 
+  // Legend accordion
+  const legend = document.getElementById('payment-legend');
+  const legendToggle = document.getElementById('legend-toggle');
+  if (legend && legendToggle) {
+    legendToggle.addEventListener('click', () => {
+      const isOpen = legend.classList.toggle('open');
+      legendToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
   renderGrid();
   renderUpcoming();
 
@@ -197,7 +250,6 @@
     if (targetIndex !== -1) {
       openDrawer(targetIndex);
     } else {
-      // Service might be in a different category — reset filter to all and retry
       activeFilter = 'all';
       renderGrid();
       filters.forEach(b => b.classList.toggle('active', b.dataset.filter === 'all'));

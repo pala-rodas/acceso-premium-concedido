@@ -99,7 +99,7 @@
           <div>
             <div class="inv-ref">Factura afectiva</div>
             <h2>${inv.month}</h2>
-            <div style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:6px;">Ref. PAU-ZABI 💙💜-${inv.id}</div>
+            <div style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:6px;">Ref. PAU & ZABI-${inv.id}</div>
           </div>
           <div class="invoice-meta">
             <div class="inv-label">Fecha de emisión</div>

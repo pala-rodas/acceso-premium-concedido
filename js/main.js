@@ -14,12 +14,14 @@
   function open() {
     drawer.classList.add('open');
     overlay.classList.add('open');
+    btn.classList.add('hidden');
     document.body.style.overflow = 'hidden';
   }
 
   function close() {
     drawer.classList.remove('open');
     overlay.classList.remove('open');
+    btn.classList.remove('hidden');
     document.body.style.overflow = '';
   }
 

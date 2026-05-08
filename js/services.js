@@ -124,18 +124,22 @@
     });
   }
 
+  const burgerBtn = document.getElementById('burger-btn');
+
   function openDrawer(index) {
     drawerIndex = index;
     renderDrawerContent();
     drawer.classList.add('open');
     drawerOverlay.classList.add('open');
     document.body.style.overflow = 'hidden';
+    if (window.innerWidth <= 768 && burgerBtn) burgerBtn.classList.add('hidden');
   }
 
   function closeDrawer() {
     drawer.classList.remove('open');
     drawerOverlay.classList.remove('open');
     document.body.style.overflow = '';
+    if (burgerBtn) burgerBtn.classList.remove('hidden');
   }
 
   function renderDrawerContent() {

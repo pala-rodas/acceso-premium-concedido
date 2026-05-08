@@ -1087,41 +1087,6 @@ h3 {
   resize: vertical;
 }
 
-/* ===== CARTA EDITORIAL ===== */
-.carta-wrap {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 0 24px 80px;
-  text-align: center;
-}
-.carta-body p {
-  font-size: 1.05rem;
-  line-height: 2.1;
-  color: var(--text-secondary);
-  margin-bottom: 28px;
-}
-.carta-body p:first-child {
-  color: var(--text);
-}
-.carta-body p:last-child {
-  margin-bottom: 0;
-}
-.carta-firma {
-  margin-top: 56px;
-  padding-top: 40px;
-  border-top: 1px solid var(--border);
-}
-.carta-firma .firma-text {
-  font-family: var(--font-serif);
-  font-size: 1rem;
-  color: var(--text);
-  margin-bottom: 8px;
-}
-.carta-firma .firma-note {
-  font-size: 0.8rem;
-  font-style: italic;
-  color: var(--text-muted);
-}
 
 /* ===== CARTA INLINE (index) ===== */
 .carta-inline {
@@ -1275,9 +1240,6 @@ h3 {
   }
   .service-drawer {
     padding: 28px 20px;
-  }
-  .carta-wrap {
-    padding: 100px 20px 60px;
   }
   .page-header {
     padding: 100px 0 48px;
@@ -1521,32 +1483,6 @@ h3 {
   margin-left: 12px;
 }
 
-/* ===== CARTA PAGE ===== */
-.carta-page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: var(--bg-alt);
-}
-.carta-main {
-  flex: 1;
-}
-.carta-wrap::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(
-    ellipse at 30% 70%,
-    rgba(184, 134, 11, 0.03) 0%,
-    transparent 60%
-  );
-  pointer-events: none;
-  z-index: 0;
-}
-.carta-wrap {
-  position: relative;
-  z-index: 1;
-}
 
 /* ===== CLAUSULAS PAGE ===== */
 .clausulas-section {

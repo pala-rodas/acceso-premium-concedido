@@ -6,8 +6,8 @@
   --bg-alt: #f5f2ec;
   --bg-warm: #fffbf0;
   --text: #1a1a1a;
-  --text-secondary: #555;
-  --text-muted: #bbb;
+  --text-secondary: #5d5d5d;
+  --text-muted: #aaaaaa;
   --text-subtle: #999;
   --text-faint: #888;
   --gold: #b8860b;
@@ -1087,7 +1087,6 @@ h3 {
   resize: vertical;
 }
 
-
 /* ===== CARTA INLINE (index) ===== */
 .carta-inline {
   padding: 96px 24px;
@@ -1482,7 +1481,6 @@ h3 {
   font-weight: 400;
   margin-left: 12px;
 }
-
 
 /* ===== CLAUSULAS PAGE ===== */
 .clausulas-section {

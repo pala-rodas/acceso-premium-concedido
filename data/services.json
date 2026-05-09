@@ -91,7 +91,8 @@
       ],
       "technicalNote": "El servicio se presta con paciencia genuina y sin hacer sentir a la clienta que pregunta cosas obvias. La proveedora posee criterio propio sobre sostenibilidad y tecnología, lo que eleva significativamente la calidad de las recomendaciones frente a buscadores genéricos.",
       "cost": "120B + 80A",
-      "costDetail": { "besos": 120, "abrazos": 80 }
+      "costDetail": { "besos": 120, "abrazos": 80 },
+      "tags": ["tecnologia", "tech", "compras", "consejos", "recomendaciones", "sostenible", "eco", "ayuda", "explicacion"]
     },
     {
       "id": "mimos-distancia",
@@ -115,7 +116,8 @@
       ],
       "technicalNote": "La efectividad del servicio depende de la calidad de la conexión emocional preexistente. En este caso, dicha conexión es elevada, lo que potencia el impacto de cada interacción. El servicio no requiere solicitud: se activa de forma autónoma.",
       "cost": "200B + 120A",
-      "costDetail": { "besos": 200, "abrazos": 120 }
+      "costDetail": { "besos": 200, "abrazos": 120 },
+      "tags": ["mimos", "mensajes", "audios", "distancia", "lejos", "madrid", "barcelona", "presencia", "cuidado", "te pienso", "te quiero"]
     },
     {
       "id": "bromas-sonrisas",
@@ -139,7 +141,8 @@
       ],
       "technicalNote": "El humor de la proveedora es inteligente, no infantil. No se recurre a chistes almacenados, sino a observaciones reales del contexto. La calidad es consistentemente alta, aunque puede verse intensificada en situaciones de alta complicidad.",
       "cost": "150MR + 120B",
-      "costDetail": { "momentosRisa": 150, "besos": 120 }
+      "costDetail": { "momentosRisa": 150, "besos": 120 },
+      "tags": ["risas", "humor", "bromas", "sonrisas", "reir", "complicidad", "divertido", "gracioso"]
     },
     {
       "id": "cardio-compartido",
@@ -163,7 +166,8 @@
       ],
       "technicalNote": "Las 52 horas registradas son un dato real, no una exageración. La proveedora se adapta al ritmo de la clienta sin renunciar al propio. El cardio compartido tiene un componente emocional que ningún gimnasio individual puede proporcionar.",
       "cost": "52HC",
-      "costDetail": { "horasCompartidas": 52 }
+      "costDetail": { "horasCompartidas": 52 },
+      "tags": ["cardio", "deporte", "ejercicio", "gym", "entreno", "fisico", "actividad", "energia"]
     },
     {
       "id": "gastronomico",
@@ -187,7 +191,8 @@
       ],
       "technicalNote": "El servicio no requiere cocina de cinco estrellas. Requiere presencia, intención y la capacidad de convertir cualquier comida en algo memorable. Eso, la proveedora lo tiene.",
       "cost": "25C",
-      "costDetail": { "comidas": 25 }
+      "costDetail": { "comidas": 25 },
+      "tags": ["comida", "comer", "cocina", "cocinar", "restaurante", "desayuno", "almuerzo", "cena", "ceviche"]
     },
     {
       "id": "almohada-nocturna",
@@ -211,7 +216,8 @@
       ],
       "technicalNote": "Este es, posiblemente, el servicio con mayor retorno emocional por hora prestada. La proveedora no se mueve en exceso, no ronca (dato verificado) y mantiene una temperatura agradable. Condiciones óptimas garantizadas.",
       "cost": "30N + 120A",
-      "costDetail": { "noches": 30, "abrazos": 120 }
+      "costDetail": { "noches": 30, "abrazos": 120 },
+      "tags": ["dormir", "pecho", "noches", "descanso", "abrazo", "cama", "seguridad", "calma", "almohada"]
     },
     {
       "id": "masajes-premium",
@@ -235,7 +241,8 @@
       ],
       "technicalNote": "La proveedora tiene intuición corporal desarrollada. No hace falta pedir: detecta dónde está la tensión y trabaja desde ahí. Servicio altamente recomendado después de semanas largas.",
       "cost": "180B + 90A",
-      "costDetail": { "besos": 180, "abrazos": 90 }
+      "costDetail": { "besos": 180, "abrazos": 90 },
+      "tags": ["masaje", "masajes", "relajacion", "tension", "espalda", "cuerpo", "tocar", "manos"]
     },
     {
       "id": "moto-vip",
@@ -259,7 +266,8 @@
       ],
       "technicalNote": "La proveedora conduce con criterio. El casco está incluido. La máquina también.",
       "cost": "100A + 80B",
-      "costDetail": { "abrazos": 100, "besos": 80 }
+      "costDetail": { "abrazos": 100, "besos": 80 },
+      "tags": ["moto", "transporte", "viaje", "desplazamiento", "conducir", "paseo"]
     },
     {
       "id": "padel-remada",
@@ -283,7 +291,8 @@
       ],
       "technicalNote": "El nivel deportivo de la proveedora es el apropiado para garantizar reto sin frustración. Se adapta. Pero también compite. Eso la hace mejor compañera de juego.",
       "cost": "15P",
-      "costDetail": { "planes": 15 }
+      "costDetail": { "planes": 15 },
+      "tags": ["padel", "remo", "remada", "deporte", "jugar", "competir", "actividad", "risas"]
     },
     {
       "id": "equipaje-cuidadora",
@@ -306,7 +315,8 @@
       ],
       "technicalNote": "El servicio se presta de forma espontánea. La proveedora no espera a que le pidan; detecta la necesidad y actúa. Eso tiene valor propio más allá del esfuerzo físico.",
       "cost": "120A",
-      "costDetail": { "abrazos": 120 }
+      "costDetail": { "abrazos": 120 },
+      "tags": ["equipaje", "maleta", "cuidar", "ayuda", "proteger", "cargar", "viaje"]
     },
     {
       "id": "recogida-estacion",
@@ -330,7 +340,8 @@
       ],
       "technicalNote": "La proveedora aparece. Eso, que parece mínimo, es todo.",
       "cost": "80A + 40B",
-      "costDetail": { "abrazos": 80, "besos": 40 }
+      "costDetail": { "abrazos": 80, "besos": 40 },
+      "tags": ["recoger", "estacion", "tren", "llegada", "bienvenida", "reencuentro", "esperar"]
     },
     {
       "id": "curaduria-musical",
@@ -354,7 +365,8 @@
       ],
       "technicalNote": "El criterio de la proveedora es sólido, diverso y no dogmático. Recomienda lo que considera bueno, no lo que está de moda. Eso marca la diferencia.",
       "cost": "90B + 20P",
-      "costDetail": { "besos": 90, "planes": 20 }
+      "costDetail": { "besos": 90, "planes": 20 },
+      "tags": ["musica", "cine", "pelicula", "series", "playlist", "recomendacion", "cultura", "arte"]
     },
     {
       "id": "mimos-presenciales",
@@ -378,7 +390,8 @@
       ],
       "technicalNote": "Este servicio no se puede subcontratar ni automatizar. Requiere a la proveedora. Eso, en sí mismo, es parte del valor.",
       "cost": "300A + 180B",
-      "costDetail": { "abrazos": 300, "besos": 180 }
+      "costDetail": { "abrazos": 300, "besos": 180 },
+      "tags": ["mimos", "abrazos", "besos", "contacto", "carino", "cercania", "presencia", "tocar"]
     },
     {
       "id": "contenido-visual",
@@ -402,7 +415,8 @@
       ],
       "technicalNote": "El servicio se ejecuta bajo criterio exclusivo de la proveedora, quien determinará el momento óptimo de envío para maximizar el efecto sorpresa. La frecuencia no es fija, lo que incrementa su valor percibido.",
       "cost": "180B + 120A + contenido visual de la clienta",
-      "costDetail": { "besos": 180, "abrazos": 120 }
+      "costDetail": { "besos": 180, "abrazos": 120 },
+      "tags": ["fotos", "foto", "imagenes", "sugerente", "sorpresa", "visual", "picardia", "atractivo"]
     },
     {
       "id": "generacion-recuerdos",
@@ -427,7 +441,8 @@
       ],
       "technicalNote": "El servicio se ejecuta de manera continua y acumulativa. Su efectividad depende de la calidad de las experiencias generadas y el nivel de conexión emocional. Los resultados observados hasta la fecha son altamente favorables.",
       "cost": "260B + 180A + 35 recuerdos activables",
-      "costDetail": { "besos": 260, "abrazos": 180 }
+      "costDetail": { "besos": 260, "abrazos": 180 },
+      "tags": ["recuerdos", "memoria", "momentos", "nostalgia", "bonito", "especial", "experiencias"]
     },
     {
       "id": "antistress-urbano",
@@ -453,7 +468,8 @@
       ],
       "technicalNote": "El servicio se activa de forma flexible: espontánea o bajo demanda. Su intensidad se ajusta según el nivel de estrés de la clienta, la duración del trayecto y el flujo creativo de la proveedora.",
       "cost": "220B + 160A + 40MR",
-      "costDetail": { "besos": 220, "abrazos": 160, "momentosRisa": 40 }
+      "costDetail": { "besos": 220, "abrazos": 160, "momentosRisa": 40 },
+      "tags": ["estres", "metro", "tren", "transporte", "acompanar", "distancia", "mensajes", "trayecto"]
     },
     {
       "id": "descifrado-mensajes",
@@ -478,7 +494,8 @@
       ],
       "technicalNote": "El servicio se presta de forma continua e impredecible. El hecho de que la clienta entienda los mensajes es, en sí mismo, evidencia de conexión real.",
       "cost": "180B + 140A",
-      "costDetail": { "besos": 180, "abrazos": 140 }
+      "costDetail": { "besos": 180, "abrazos": 140 },
+      "tags": ["mensajes", "whatsapp", "escribir", "rapido", "acertijo", "descifrar", "typos", "caos"]
     },
     {
       "id": "clases-baile",
@@ -502,7 +519,8 @@
       ],
       "technicalNote": "No se requiere nivel previo. Se requiere disposición. El resto lo pone la proveedora.",
       "cost": "15 sesiones + 60A",
-      "costDetail": { "sesiones": 15, "abrazos": 60 }
+      "costDetail": { "sesiones": 15, "abrazos": 60 },
+      "tags": ["baile", "bailar", "musica", "movimiento", "cuerpo", "contacto", "risas", "diversion"]
     },
     {
       "id": "abrazos-distancia",
@@ -526,7 +544,8 @@
       ],
       "technicalNote": "La distancia entre Barcelona y Madrid es de aproximadamente 621 km. Este servicio opera con independencia de ese dato.",
       "cost": "120A + 60ME",
-      "costDetail": { "abrazos": 120, "mensajesEmocionales": 60 }
+      "costDetail": { "abrazos": 120, "mensajesEmocionales": 60 },
+      "tags": ["abrazos", "abrazo", "distancia", "lejos", "mensajes", "virtual", "emocional"]
     },
     {
       "id": "stickers-demanda",
@@ -551,7 +570,33 @@
       ],
       "technicalNote": "El servicio opera sin horario ni preaviso. La efectividad aumenta en proporción directa a la resistencia inicial de la clienta.",
       "cost": "ST de vuelta + B proporcionales a la efectividad",
-      "costDetail": { "stickers": "variable", "besos": "proporcional" }
+      "costDetail": { "stickers": "variable", "besos": "proporcional" },
+      "tags": ["stickers", "memes", "graciosos", "divertido", "risas", "whatsapp", "telegram", "humor"]
+    },
+    {
+      "id": "activacion-matutina",
+      "name": "Activación matutina con contenido visual no programado (modo amanecer sorpresa)",
+      "category": ["distancia", "emocional"],
+      "status": "active",
+      "featured": false,
+      "shortDesc": "Fotografías personales enviadas en las primeras horas del día. Modalidad variable. Sin advertencia previa.",
+      "description": "Servicio de envío espontáneo e impredecible de fotografías personales de la proveedora, ejecutado exclusivamente durante las primeras horas de la mañana, antes de que la clienta haya tenido tiempo de prepararse mentalmente para recibirlas. La selección de modalidad es discrecional, no negociable y puede alternar sin patrón predecible, lo cual constituye parte esencial del valor del servicio.",
+      "components": [
+        "Modalidad A — Cotidiana con encanto: imagen de contexto natural (desayuno, luz de mañana, pijama, cara recién levantada) con alta capacidad de generar ternura involuntaria",
+        "Modalidad B — Humor de bajo coste, impacto alto: contenido visual cómico o absurdo diseñado para provocar risa antes de las 9h, sin advertencia previa",
+        "Modalidad C — Sugerente calibrado: material visualmente estimulante, elegante y estratégicamente compuesto, diseñado para iniciar el día con una temperatura emocional considerablemente elevada"
+      ],
+      "benefits": [
+        "Inicio de jornada con estímulo emocional positivo",
+        "Reacción garantizada (modalidad variable)",
+        "Presencia mental de la proveedora desde primera hora",
+        "Refuerzo del vínculo mediante constancia visual matutina"
+      ],
+      "function": "Sustituir la alarma convencional por un estímulo emocional de mayor calidad. Garantizar que el primer pensamiento relevante del día esté asociado a la proveedora. Generar sonrisa refleja antes del primer café. Activar el sistema nervioso de forma agradable y no traumática.",
+      "technicalNote": "El servicio no requiere respuesta inmediata, aunque se valorará positivamente cualquier reacción expresada. La ausencia de respuesta durante más de 20 minutos podrá interpretarse como señal de que la foto cumplió su función y la clienta necesita un momento para recomponerse. La frecuencia es irregular por diseño. La anticipación forma parte del servicio.",
+      "cost": "220B + 160A + 1 buenos días de calidad garantizada por envío",
+      "costDetail": { "besos": 220, "abrazos": 160 },
+      "tags": ["fotos", "foto", "manana", "buenos dias", "despertar", "sorpresa", "sugerente", "ternura", "amanecer"]
     },
     {
       "id": "relajacion-integral",
@@ -583,7 +628,8 @@
       "promotionalNote": "Con motivo de la próxima activación presencial, se incluye una muestra gratuita del servicio. Primera fase: contacto inicial con estímulos suaves. Segunda fase: incremento de la intensidad. Fase final: activación controlada en entorno privado.",
       "technicalNote": "La muestra tiene carácter introductorio. La experiencia completa podrá activarse bajo demanda, con intensidad ajustable.",
       "cost": "260B + 200A + activación bajo demanda",
-      "costDetail": { "besos": 260, "abrazos": 200 }
+      "costDetail": { "besos": 260, "abrazos": 200 },
+      "tags": ["relajacion", "masaje", "sensual", "cuerpo", "contacto", "placer", "bienestar", "intimo"]
     },
     {
       "id": "masajes-vela",
@@ -603,7 +649,8 @@
         "Experiencia única difícilmente replicable"
       ],
       "cost": "Por acordar",
-      "costDetail": {}
+      "costDetail": {},
+      "tags": ["masaje", "vela", "aceite", "relajacion", "sensual", "romantico", "proximo"]
     },
     {
       "id": "sistema-recompensa",
@@ -624,7 +671,8 @@
         "Sistema de recompensa que hace el proceso llevadero"
       ],
       "cost": "Variable · basado en progreso",
-      "costDetail": {}
+      "costDetail": {},
+      "tags": ["postura", "recompensa", "besos", "abrazos", "incentivo", "mejora", "proximo"]
     },
     {
       "id": "hipnosis",
@@ -642,7 +690,8 @@
       "benefits": ["Por determinar en el momento de activación"],
       "technicalNote": "Estado: programado. La fecha de activación depende de factores externos aún por determinar. Se anticipa que la valoración será elevada.",
       "cost": "Por definir (se anticipa que será elevada)",
-      "costDetail": {}
+      "costDetail": {},
+      "tags": ["hipnosis", "misterio", "proximo", "secreto", "especial"]
     }
   ]
 }

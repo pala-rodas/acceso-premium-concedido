@@ -53,7 +53,8 @@
 
     if (searchQuery) {
       filtered = activeServices.filter(s =>
-        s.name.toLowerCase().includes(searchQuery)
+        s.name.toLowerCase().includes(searchQuery) ||
+        (s.tags && s.tags.some(t => t.toLowerCase().includes(searchQuery)))
       );
     } else if (activeFilter === 'all') {
       filtered = activeServices;
